@@ -1,0 +1,8 @@
+@import 'src/variables';
+@import '~le5le-ui/variables';
+
+$color-border: #ddd;
+
+.body {
+  border-top: 1px solid $color-border;
+}
