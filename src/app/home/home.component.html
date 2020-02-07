@@ -1,5 +1,36 @@
-<div class="body p50">
-  欢迎使用Angular App。
-  <p class="mt20">邮箱：alsmile123@qq.com</p>
-  <p>微信：alsmile123</p>
-</div>
+<article>
+  <header class="flex middle">
+    <img class="mr10" src="/assets/img/favicon.ico">
+    行云创新 - 开发者服务
+  </header>
+  <h1 class="mv20">冠性病毒疫情数据接口分享</h1>
+  <div>文案介绍</div>
+  <section>
+    <h2 class="mt20">开发接口</h2>
+    <ul class="mt10">
+      <li class="flex">
+        <label class="full">1. 深圳市卫健委冠性病毒疫情数据</label>
+        <a href="http://szyq.c.cloudtogo.cn/data/sz" target="_blank">数据示例</a>
+        <a class="ml15">查看文档</a>
+      </li>
+      <li class="gray">
+        （陆续新增中...）
+      </li>
+    </ul>
+  </section>
+  <section class="desc mv30">
+    授权声明：MIT
+  </section>
+  <section class="mv30">
+    <h2 class="mt20">数据演示</h2>
+    <div class="p20">
+      <ui-echarts [options]='optionsCategories' [initOpt]='initOpt' [redraw]="redraw" class='chart'></ui-echarts>
+    </div>
+    <div class="p20 mt30">
+      <ui-echarts [options]='optionsHospital' [initOpt]='initOpt' [redraw]="redraw" class='chart'></ui-echarts>
+    </div>
+  </section>
+  <section class="desc mv30">
+    授权声明 · 数据来源
+  </section>
+</article>

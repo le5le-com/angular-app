@@ -5,26 +5,26 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 import { NoticeService } from 'le5le-components/notice';
-import { CookieService, StoreService } from 'le5le-store';
+import { Store, Cookie } from 'le5le-store';
 import { environment } from 'src/environments/environment';
 import { CoreService } from '../core/core.service';
 
 @Injectable()
 export class AppHttpInterceptor implements HttpInterceptor {
-  constructor(protected store: StoreService, protected coreService: CoreService) {}
+  constructor(protected coreService: CoreService) { }
 
   private getToken(): string {
     const remember: any = localStorage.getItem('rememberMe');
     if (remember) {
       return localStorage.getItem(environment.token) || '';
     } else {
-      return CookieService.get(environment.token) || '';
+      return Cookie.get(environment.token) || '';
     }
   }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     const authReq = req.clone({
-      headers: req.headers.set('Authorization', this.getToken())
+      // headers: req.headers.set('Authorization', this.getToken())
     });
     return next.handle(authReq).pipe(
       tap(
@@ -56,18 +56,18 @@ export class AppHttpInterceptor implements HttpInterceptor {
             }
 
             if (event.status === 401) {
-              this.store.set('auth', -1);
+              Store.set('auth', -1);
             } else if (event.status === 403) {
-              this.store.set('redirect', '/');
+              Store.set('redirect', '/');
             }
           }
         },
         // Operation failed; error is an HttpErrorResponse
         error => {
           if (error.status === 401) {
-            this.store.set('auth', -1);
+            Store.set('auth', -1);
           } else if (error.status === 403) {
-            this.store.set('redirect', '/');
+            Store.set('redirect', '/');
           } else if (error.status === 504) {
             const _noticeService: NoticeService = new NoticeService();
             _noticeService.notice({

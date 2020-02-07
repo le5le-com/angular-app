@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { FormModule } from 'le5le-components/form';
-import { AvatarModule } from 'le5le-components/avatar';
 import { EscModule } from 'le5le-components/esc';
 import { LazyLoadModule } from 'le5le-components/lazyLoad';
 import { FileUploadModule } from 'le5le-components/fileUpload';
@@ -13,6 +12,7 @@ import { MoveModule } from 'le5le-components/move';
 import { SelectModule } from 'le5le-components/select';
 import { PaginationModule } from 'le5le-components/pagination';
 import { ProgressModule } from 'le5le-components/progress';
+import { EchartsModule } from 'le5le-components/echarts';
 // import { SwitchModule } from 'le5le-components/switch';
 // import { QrcodeModule } from 'le5le-components/qrcode';
 // import { WizardModule } from 'le5le-components/wizard';
@@ -30,7 +30,6 @@ import { HtmlPipe } from './pipes/html.pipe';
     RouterModule,
     ReactiveFormsModule,
     FormModule,
-    AvatarModule,
     EscModule,
     LazyLoadModule,
     FileUploadModule,
@@ -38,7 +37,8 @@ import { HtmlPipe } from './pipes/html.pipe';
     SelectModule,
     PaginationModule,
     MoveModule,
-    ProgressModule
+    ProgressModule,
+    EchartsModule
   ],
   declarations: [HtmlPipe],
   exports: [
@@ -48,7 +48,6 @@ import { HtmlPipe } from './pipes/html.pipe';
     ReactiveFormsModule,
     HtmlPipe,
     FormModule,
-    AvatarModule,
     EscModule,
     LazyLoadModule,
     FileUploadModule,
@@ -56,8 +55,9 @@ import { HtmlPipe } from './pipes/html.pipe';
     SelectModule,
     PaginationModule,
     MoveModule,
-    ProgressModule
+    ProgressModule,
+    EchartsModule
   ],
   providers: []
 })
-export class SharedModule {}
+export class SharedModule { }

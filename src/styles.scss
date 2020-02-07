@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'node_modules/le5le-ui/index';
+@import "variables";
+@import "node_modules/le5le-ui/index";
 
 .headline {
   font-size: 0.24rem;
@@ -50,4 +50,22 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #aaa;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+article {
+  background-color: #fff;
+  max-width: 10rem;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0.07rem 0.2rem;
 }

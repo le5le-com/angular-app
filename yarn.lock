@@ -2383,6 +2383,13 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+echarts@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.npm.taobao.org/echarts/download/echarts-4.6.0.tgz#b5a47a1046cec93ceeef954f9ee54751340558ec"
+  integrity sha1-taR6EEbOyTzu75VPnuVHUTQFWOw=
+  dependencies:
+    zrender "4.2.0"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -4328,24 +4335,22 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-le5le-components@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/le5le-components/-/le5le-components-0.8.0.tgz#6489a8d57b1b09f7aacdb5065bc6f5f0c1159057"
-  integrity sha512-Ap5iMB7yG6G1gEBELN3e9p3igvQfP8xqM+GHXEO11fxhF4cDgACF+9oh/Yd/1K7q4UefvxQd6qHwsQSUr16rLg==
+le5le-components@^0.8.8:
+  version "0.8.9"
+  resolved "https://registry.npm.taobao.org/le5le-components/download/le5le-components-0.8.9.tgz#148ee8c0b49ead8eddf590b581f9ba229177378b"
+  integrity sha1-FI7owLSerY7d9ZC1gfm6IpF3N4s=
   dependencies:
     tslib "^1.9.0"
 
-le5le-store@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/le5le-store/-/le5le-store-0.7.0.tgz#7180716d793b07f0424ec216102083a8567e8753"
-  integrity sha512-fRRIqMllqldSTgYU9tZeygGVZ5Uw3p4SIRXxhmdQ39n7tuUmBnaU59n23v8Rn1zqxFFwUX4CAxTdgF642b8MdQ==
-  dependencies:
-    tslib "^1.9.0"
+le5le-store@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/le5le-store/download/le5le-store-1.0.2.tgz#e995abc80a333acba59d522745e31d3aceffc55a"
+  integrity sha1-6ZWryAozOsulnVInReMdOs7/xVo=
 
-le5le-ui@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/le5le-ui/-/le5le-ui-0.8.0.tgz#19433ff69c1c43ca7f570a1cd187615132c9f4cd"
-  integrity sha512-qZ1MH8s0SzUDZc9BbYV+9sM3Yrc7Gz9KFEVJ165UWsIV3baoL/AjqhJKg4bV9G6lN2nAItz5kgarQKTZCpbwbA==
+le5le-ui@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.npm.taobao.org/le5le-ui/download/le5le-ui-0.8.2.tgz#1f5b235ff36098ecc417d7f828c04f5df8624bfb"
+  integrity sha1-H1sjX/NgmOzEF9f4KMBPXfhiS/s=
 
 less-loader@4.1.0:
   version "4.1.0"
@@ -8157,3 +8162,8 @@ zone.js@~0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.9.1.tgz#e37c6e5c54c13fae4de26b5ffe8d8e9212da6d9b"
   integrity sha512-GkPiJL8jifSrKReKaTZ5jkhrMEgXbXYC+IPo1iquBjayRa0q86w3Dipjn8b415jpitMExe9lV8iTsv8tk3DGag==
+
+zrender@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.2.0.tgz?cache=0&sync_timestamp=1576159866096&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fzrender%2Fdownload%2Fzrender-4.2.0.tgz#d001302e155f28de1f9fc7fcd5c254bad28471cf"
+  integrity sha1-0AEwLhVfKN4fn8f81cJUutKEcc8=

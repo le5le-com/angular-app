@@ -5,8 +5,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppHttpInterceptor } from './http/http.interceptor';
 
-import { Le5leStoreModule } from 'le5le-store';
-
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 
@@ -22,7 +20,6 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     HttpClientModule,
     SharedModule,
-    Le5leStoreModule.forRoot(),
     CoreModule.forRoot(),
     AppRoutingModule
   ],
@@ -35,4 +32,4 @@ import { HomeComponent } from './home/home.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
