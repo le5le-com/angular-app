@@ -6,8 +6,8 @@ import { HttpService } from 'src/app/http/http.service';
 export class HomeService {
   constructor(protected http: HttpService) { }
 
-  async Get(city = 'sz') {
-    const ret = await this.http.Get('/data/' + city);
+  async Get() {
+    const ret = await this.http.Get('/data');
     if (ret.error) {
       return null;
     }

@@ -1,6 +1,6 @@
-# cloudtogo - fy
+# angular-app
 
-疫情数据项目。
+angular 项目使用的框架模板
 
 ## 开发调试
 

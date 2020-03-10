@@ -4335,10 +4335,10 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-le5le-components@^0.8.8:
-  version "0.8.9"
-  resolved "https://registry.npm.taobao.org/le5le-components/download/le5le-components-0.8.9.tgz#148ee8c0b49ead8eddf590b581f9ba229177378b"
-  integrity sha1-FI7owLSerY7d9ZC1gfm6IpF3N4s=
+le5le-components@^0.8.14:
+  version "0.8.12"
+  resolved "https://registry.npm.taobao.org/le5le-components/download/le5le-components-0.8.12.tgz#67f1e0c4e234c6bd1c04a3a321f152f504c2c966"
+  integrity sha1-Z/HgxOI0xr0cBKOjIfFS9QTCyWY=
   dependencies:
     tslib "^1.9.0"
 
