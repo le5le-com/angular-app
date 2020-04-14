@@ -1,0 +1,17 @@
+@import "src/variables";
+@import "node_modules/le5le-ui/index";
+
+.page {
+  & > div {
+    height: calc(100vh - 0.6rem);
+    overflow: auto;
+  }
+
+  .menus {
+    width: 2.1rem;
+    padding: 0.2rem;
+    border-right: 1px solid $color-border;
+    flex-shrink: 0;
+    background-color: $header-background-color;
+  }
+}

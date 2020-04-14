@@ -4335,10 +4335,10 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-le5le-components@^0.8.14:
-  version "0.8.12"
-  resolved "https://registry.npm.taobao.org/le5le-components/download/le5le-components-0.8.12.tgz#67f1e0c4e234c6bd1c04a3a321f152f504c2c966"
-  integrity sha1-Z/HgxOI0xr0cBKOjIfFS9QTCyWY=
+le5le-components@^0.8.12:
+  version "0.8.15"
+  resolved "https://registry.npm.taobao.org/le5le-components/download/le5le-components-0.8.15.tgz#89789298b28c4da1fc4523727c5639b12fb2f385"
+  integrity sha1-iXiSmLKMTaH8RSNyfFY5sS+y84U=
   dependencies:
     tslib "^1.9.0"
 
@@ -8018,6 +8018,11 @@ xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
+
+xterm@3.14.2:
+  version "3.14.2"
+  resolved "https://registry.npm.taobao.org/xterm/download/xterm-3.14.2.tgz?cache=0&sync_timestamp=1586782272776&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fxterm%2Fdownload%2Fxterm-3.14.2.tgz#f1285288bdc7df7056ef4bde64311900748c3e5d"
+  integrity sha1-8ShSiL3H33BW70veZDEZAHSMPl0=
 
 xxhashjs@^0.2.1:
   version "0.2.2"

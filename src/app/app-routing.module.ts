@@ -3,10 +3,13 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
-const routes: Routes = [{ path: '', component: HomeComponent, pathMatch: 'full' }];
+const routes: Routes = [
+  { path: '', redirectTo: '/cms/home', pathMatch: 'full' },
+  // { path: '', component: HomeComponent, pathMatch: 'full' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

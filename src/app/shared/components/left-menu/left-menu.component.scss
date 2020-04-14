@@ -1,0 +1,14 @@
+@import "src/variables";
+@import "node_modules/le5le-ui/index";
+
+.menu {
+  color: #90939a;
+  margin-bottom: 0.1rem;
+
+  a {
+    color: #90939a;
+    &.active {
+      color: $color-primary;
+    }
+  }
+}

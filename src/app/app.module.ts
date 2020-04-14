@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { CmsModule } from './cms/cms.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     SharedModule,
     CoreModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    CmsModule
   ],
   providers: [
     {
