@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LeftMenuComponent implements OnInit {
 
+  show: any = { dashboard: true, demo: true, demo2: true };
   constructor(private _router: Router) { }
 
   ngOnInit() {

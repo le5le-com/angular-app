@@ -1,6 +1,57 @@
-.border-top {
-  border-color: #555;
-  height: calc(100vh - 0.6rem);
+@import "src/variables";
+
+.header {
+  color: $color;
+  font-size: 0.12rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px 0px;
+
+  .logo {
+    color: #fa8c16 !important;
+    font-size: 0.14rem;
+    font-weight: 600;
+
+    img {
+      position: relative;
+      max-height: 0.24rem;
+      top: -2px;
+    }
+  }
+
+  a {
+    color: $color !important;
+    font-size: 0.12rem;
+    padding: 0 0.15rem;
+
+    &:hover {
+      color: $color-primary !important;
+    }
+  }
+
+  .item .dropdown {
+    top: 0.5rem;
+    background-color: #fff;
+    &::before {
+      color: #fff;
+    }
+
+    a {
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .iconfont {
+    font-size: 0.13rem;
+    position: relative;
+    top: 1px;
+  }
+}
+
+.mt50 {
+  height: calc(100vh - 0.5rem);
   overflow: hidden;
-  background-color: #f6f3f7;
+  background-color: #f6f6f6;
 }

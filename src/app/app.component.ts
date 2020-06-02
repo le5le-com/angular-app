@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Store } from 'le5le-store';
-import { CoreService } from './core/core.service';
 
 @Component({
   selector: 'app-root',
@@ -10,15 +9,14 @@ import { CoreService } from './core/core.service';
 })
 export class AppComponent implements OnInit {
   user: any = {
-    username: 'demo'
+    username: '小乐'
   };
 
-  constructor(private _coreService: CoreService) { }
+  constructor() { }
 
   ngOnInit() {
     Store.subscribe('user', ret => {
       if (ret) {
-        ret.nicknamePinyin = this._coreService.getPinyin(ret.username);
         this.user = ret;
       }
     });

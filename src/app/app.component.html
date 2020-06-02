@@ -1,26 +1,36 @@
 <div *ngIf="user">
   <div class="header">
     <div class="item">
-      <a class=""><img src="../assets/img/favicon.ico" class="rel" style="max-height:0.36rem;top: 0" /></a>
+      <a class="logo" routerLink="/">
+        <img class="mr5" src="../assets/img/favicon.ico" />
+        乐吾乐 - 控制台
+      </a>
     </div>
 
-    <div class="item full ph10" #middle></div>
-
-    <div class="item right" style="padding: 0 0;">
-      <div class="user" *ngIf="user">
-        <a class="pointer" style="padding: 0 .08rem">
-          <i class="iconfont icon-peoplefill"></i>
-          {{user.username}}
-          <i class="iconfont icon-triangle-down"></i>
-        </a>
-        <div class="dropdown right">
-          <div class="item"><a (click)="onSignout()">退出</a></div>
-        </div>
+    <div class="item full ph10"></div>
+    <div class="item">
+      <a href="http://le5le.com" target="_blank">官网</a>
+    </div>
+    <div class="item">
+      <a><i class="iconfont icon-help-circle"></i></a>
+    </div>
+    <div class="item">
+      <a><i class="iconfont icon-notice"></i></a>
+    </div>
+    <div class="item">
+      <a>
+        <img class="rel" style="top: -0.02rem"
+          src="https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png" />
+        {{user.username}}
+        <i class="iconfont icon-triangle-down"></i>
+      </a>
+      <div class="dropdown right" style="right: 0.05rem;">
+        <div class="item"><a (click)="onSignout()">退出</a></div>
       </div>
     </div>
   </div>
 </div>
-<div class="mt60 border-top">
+<div class="mt50">
   <router-outlet></router-outlet>
 </div>
 <ui-echarts class='hidden'></ui-echarts>

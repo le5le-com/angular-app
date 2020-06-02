@@ -5,10 +5,26 @@
   color: #90939a;
   margin-bottom: 0.1rem;
 
+  .iconfont {
+    font-size: 0.13rem;
+  }
+
   a {
     color: #90939a;
     &.active {
-      color: $color-primary;
+      color: #fa8c16;
+    }
+
+    &:hover {
+      color: #faad14 !important;
+    }
+  }
+
+  .children {
+    padding: 0.05rem 0 0 0.3rem;
+    a {
+      display: block;
+      line-height: 2.4;
     }
   }
 }

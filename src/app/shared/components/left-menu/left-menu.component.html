@@ -1,66 +1,47 @@
 <div class="menu">
-  <div class="flex middle">
-    <i class="iconfont icon-home mr5"></i>
-    <div class="full">总览</div>
-    <i class="iconfont icon-angle-down"></i>
+  <div class="flex middle" (click)="show.dashboard=!show.dashboard">
+    <i class="iconfont icon-data mr5"></i>
+    <a class="full">总览</a>
+    <i class="iconfont " [class.icon-angle-down]="show.dashboard" [class.icon-angle-right]="!show.dashboard"></i>
   </div>
-  <div class="pl20">
-    <a class="block" routerLink="/cms/home" [class.active]="isActive('/cms/home')">
-      <i class="iconfont icon-composer mr5"></i>
-      <span>首页</span>
+  <div class="children" *ngIf="show.dashboard">
+    <a routerLink="/cms/home" [class.active]="isActive('/cms/home')">
+      数据总览
     </a>
-    <a class="block" routerLink="/cms/class" [class.active]="isActive('/cms/class')">
-      <i class="iconfont icon-composer mr5"></i>
-      <span>分类管理</span>
-    </a>
-  </div>
-</div>
-<div class="menu">
-  <div class="flex middle">
-    <i class="iconfont icon-home mr5"></i>
-    <div class="full">解决方案</div>
-    <i class="iconfont icon-angle-down"></i>
-  </div>
-  <div class="pl20">
-    <a class="block" routerLink="/project/list" [class.active]="isActive('/project/list')">
-      <i class="iconfont icon-composer mr5"></i>
-      <span>列表</span>
+    <a routerLink="/cms/user" [class.active]="isActive('/cms/user')">
+      用户总览
     </a>
   </div>
 </div>
 
 <div class="menu">
-  <div class="flex middle">
-    <i class="iconfont icon-home mr5"></i>
-    <div class="full">订单</div>
-    <i class="iconfont icon-angle-down"></i>
+  <div class="flex middle" (click)="show.demo=!show.demo">
+    <i class="iconfont icon-app mr5"></i>
+    <a class="full">项目</a>
+    <i class="iconfont" [class.icon-angle-down]="show.demo" [class.icon-angle-right]="!show.demo"></i>
   </div>
-  <div class="pl20">
-    <a class="block" routerLink="/order/dashboard" [class.active]="isActive('/order/dashboard')">
-      <i class="iconfont icon-composer mr5"></i>
-      <span>概览</span>
+  <div class="children" *ngIf="show.demo">
+    <a routerLink="/cms/home" [class.active]="isActive('/cms/demo')">
+      项目总览
     </a>
-    <a class="block" routerLink="/order/list" [class.active]="isActive('/order/list')">
-      <i class="iconfont icon-composer mr5"></i>
-      <span>列表</span>
+    <a routerLink="/cms/class" [class.active]="isActive('/cms/demo')">
+      项目分析
     </a>
   </div>
 </div>
 
 <div class="menu">
-  <div class="flex middle">
-    <i class="iconfont icon-home mr5"></i>
-    <div class="full">用户</div>
-    <i class="iconfont icon-angle-down"></i>
+  <div class="flex middle" (click)="show.demo2=!show.demo2">
+    <i class="iconfont icon-edit mr5"></i>
+    <a class="full">内容</a>
+    <i class="iconfont " [class.icon-angle-down]="show.demo2" [class.icon-angle-right]="!show.demo2"></i>
   </div>
-  <div class="pl20">
-    <a class="block" routerLink="/user/dashboard" [class.active]="isActive('/user/dashboard')">
-      <i class="iconfont icon-composer mr5"></i>
-      <span>概览</span>
+  <div class="children" *ngIf="show.demo2">
+    <a routerLink="/cms/home" [class.active]="isActive('/cms/demo')">
+      资源
     </a>
-    <a class="block" routerLink="/user/list" [class.active]="isActive('/user/list')">
-      <i class="iconfont icon-composer mr5"></i>
-      <span>列表</span>
+    <a routerLink="/cms/class" [class.active]="isActive('/cms/demo')">
+      分析
     </a>
   </div>
 </div>
