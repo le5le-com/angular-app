@@ -1,6 +1,6 @@
 {
-  "/data": {
-    "target": "http://szyq.c.cloudtogo.cn",
+  "/api": {
+    "target": "http://le5le.com",
     "changeOrigin": true,
     "secure": false
   }
